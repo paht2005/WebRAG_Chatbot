@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Chat Interface</title>
+</head>
+
+<body class="bg-[#3E0D81]">
+    <section class="">
+        <div>
+            <div class="flex flex-col justify-center items-center ">
+               
+                <img src="D:\miniProject\WebRAG-Chatbot\imgs\img-18.jpg"
+                class="h-20 " alt="">
+                <h1
+                    class="text-5xl py-2 font-bold text-transparent bg-clip-text bg-white  drop-shadow-2xl underline decoration-double    ">
+                   <span><img src="" alt=""></span> Chat Interface</h1>
+                <div class="w-screen flex flex-col justify-evenly items-center py-8 px-4">
+
+                    <div class="pb-2 w-full sm:w-[50rem] border border-orange-500 mx-5 ">
+                        <h1
+                            class="w-full py-2 px-3 bg-gradient-to-br from-orange-400 via-orange-500 to-orange-500 font-bold text-white">
+                            Ask a question</h1>
+                        {% if chat_history %}
+                        <ul class="py-4 px-3">
+                            {% for message in chat_history %}
+                            <li
+                                class="drop-shadow-2xl my-2  bg-orange-100 py-3 px-4 rounded-md text-slate-600 font-semibold sm:overflow-visible overflow-hidden sm:text-base text-xs font-mono">
+                                {{ message }}
+                            </li>
+                            
+                            
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        <div class="w-full flex justify-center">
+                            <p
+                                class="border border-2 border-orange-500 text-white px-3 py-2 w-1/2 flex justify-center font-mono">
+                                No chat history yet.</p>
+                        </div>
+                        {% endif %}
+                        <form action="/chat" method="post">
+                            <div class="w-full flex flex-row justify-evenly">
+                                <input
+                                    class="bg-orange-100 w-full mx-4 py-2 rounded-2xl text-black font-mono px-4 border border-2 border-black"
+                                    placeholder="" type="text" name="question" id="question" required>
+                                <button
+                                    class="px-7 mx-2 rounded-2xl bg-gradient-to-br from-orange-300 via-orange-500 to-orange-600 text-white hover:bg-red-400"
+                                    type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
