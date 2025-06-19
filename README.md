@@ -56,6 +56,9 @@ WebRAG_Chatbot/
 ├── app.py # Main application code (Flask + LangChain)
 ├── gitignore # Git ignore rules
 ├── prompts.py # Custom system prompts for RAG chain
+├── requirements.txt                # Python dependencies
+├── LICENSE
+
 ```
 ---
 ## System Architecture
