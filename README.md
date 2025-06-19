@@ -1,5 +1,23 @@
 # Web-based Multi PDF RAG Chatbot with LangChain & Groq
 
+
+---
+## Table of Contents
+- [Problem Statement](#problem-statement)
+- [Objective](#objective)
+- [System Workflow](#system-workflow)
+  - [1. Document Ingestion](#1-document-ingestion)
+  - [2. Embedding & Indexing](#2-embedding--indexing)
+  - [3. Query Execution (RAG Pipeline)](#3-query-execution-rag-pipeline)
+  - [4. Conversational Memory](#4-conversational-memory)
+- [Key Components](#key-components)
+- [Repository Structure](#repository-structure)
+- [System Architecture](#system-architecture)
+- [Use Cases](#use-cases)
+- [Installation](#installation)
+- [License](#license)
+- [Contributing](#contributing)
+
 ---
 ## Problem Statement
 - Organizations frequently manage large repositories of unstructured PDF documents such as technical manuals, compliance reports, internal policies, and product documentation. Manually retrieving relevant information from these files is time-consuming and inefficient.
