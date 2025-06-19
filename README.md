@@ -2,7 +2,7 @@
 
 ### Demo Product:
 ![demo1](/imgs/demo1.png)
-
+![demo2](/imgs/demo2.png)
 ---
 ## Table of Contents
 - [Problem Statement](#problem-statement)
