@@ -2,8 +2,8 @@
 
 ---
 ## Problem Statement
-Organizations frequently manage large repositories of unstructured PDF documents such as technical manuals, compliance reports, internal policies, and product documentation. Manually retrieving relevant information from these files is time-consuming and inefficient.
-Traditional search mechanisms often lack semantic understanding and fail to provide context-aware answers, resulting in increased workload, delayed decision-making, and reduced productivity.
+- Organizations frequently manage large repositories of unstructured PDF documents such as technical manuals, compliance reports, internal policies, and product documentation. Manually retrieving relevant information from these files is time-consuming and inefficient.
+- Traditional search mechanisms often lack semantic understanding and fail to provide context-aware answers, resulting in increased workload, delayed decision-making, and reduced productivity.
 
 ---
 ## Objective
