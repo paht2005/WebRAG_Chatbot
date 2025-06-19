@@ -1,0 +1,9 @@
+flask
+python-dotenv
+langchain
+langchain-community
+langchain-groq
+faiss-cpu
+sentence-transformers
+
+openpyxl
