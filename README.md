@@ -42,7 +42,21 @@ This project aims to develop a **Retrieval-Augmented Generation (RAG)** based co
 | Conversational Memory | `ChatMessageHistory` + `RunnableWithMessageHistory` |
 
 --- 
+## Repository Structure
+WebRAG_Chatbot/
+├── pycache/ # Compiled Python cache
+├── faiss/ # FAISS vector index
+├── imgs/ # Image assets 
+├── static/ # Source PDF documents (knowledge base)
+├── templates/ # HTML templates for Flask frontend
+├── .env # API keys and environment variables
+├── Final Report.pdf # Final report for documentation or submission
+├── README.md # Project documentation
+├── app.py # Main application code (Flask + LangChain)
+├── gitignore # Git ignore rules
+├── prompts.py # Custom system prompts for RAG chain
 
+---
 ## System Architecture
 
 ![image](https://github.com/user-attachments/assets/86f014a1-548f-4ad6-8de5-8e75511e9969)
@@ -53,3 +67,59 @@ This project aims to develop a **Retrieval-Augmented Generation (RAG)** based co
 - Legal or compliance document Q&A.
 - Employee onboarding or policy clarification assistant.
 - Technical manuals or product documentation assistant.
+
+--- 
+## Installation
+Follow the steps below to set up and run the Multi-PDF RAG Chatbot locally:
+
+### 1.  Clone the repository
+```bash
+git clone https://github.com/paht2005/WebRAG_Chatbot.git
+cd WebRAG_Chatbot
+```
+
+### 2. (Optional but recommended) Create a virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate       # On Linux/macOS
+venv\Scripts\activate          # On Windows
+```
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+### 4. Create a .env file
+Create a file named ``.env`` in the root directory and add your API key:
+
+```bash
+GROQ_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxx
+
+```
+**Do not share this file publicly. Use my ``.env`` for reference in the repo.**
+
+### 5. Add your PDFs
+Place all your ``.pdf`` documents inside the ``static/`` folder. These will be parsed and indexed automatically when the app starts.
+
+### 6. Run the Flask app
+
+```bash
+python app.py
+
+```
+- Then open your browser and navigate to:
+```bash
+(http://127.0.0.1:5000)
+```
+- **You can now start chatting with your documents in real time**
+
+--- 
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+
+---
+## Contributing
+I welcome contributions to improve this project!
+Feel free to fork, pull request, or open issues. Ideas welcome!
