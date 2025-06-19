@@ -4,6 +4,7 @@
 ---
 ## Table of Contents
 - [Problem Statement](#problem-statement)
+- [Context & Motivation](#context-&-motivation)
 - [Objective](#objective)
 - [System Workflow](#system-workflow)
   - [1. Document Ingestion](#1-document-ingestion)
