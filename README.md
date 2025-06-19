@@ -78,7 +78,6 @@ WebRAG_Chatbot/
 ├── static/ # Source PDF documents (knowledge base)
 ├── templates/ # HTML templates for Flask frontend
 ├── .env # API keys and environment variables
-├── Final Report.pdf # Final report for documentation or submission
 ├── README.md # Project documentation
 ├── app.py # Main application code (Flask + LangChain)
 ├── gitignore # Git ignore rules
