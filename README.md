@@ -43,6 +43,7 @@ This project aims to develop a **Retrieval-Augmented Generation (RAG)** based co
 
 --- 
 ## Repository Structure
+```
 WebRAG_Chatbot/
 ├── pycache/ # Compiled Python cache
 ├── faiss/ # FAISS vector index
@@ -55,7 +56,7 @@ WebRAG_Chatbot/
 ├── app.py # Main application code (Flask + LangChain)
 ├── gitignore # Git ignore rules
 ├── prompts.py # Custom system prompts for RAG chain
-
+```
 ---
 ## System Architecture
 
