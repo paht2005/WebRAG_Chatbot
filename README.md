@@ -1,5 +1,6 @@
 # Web-based Multi PDF RAG Chatbot with LangChain & Groq
-
+### Demo Product:
+[!demo1](imgs/demo1.png)
 
 ---
 ## Table of Contents
