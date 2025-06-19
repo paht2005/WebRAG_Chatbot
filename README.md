@@ -24,6 +24,13 @@
 - Traditional search mechanisms often lack semantic understanding and fail to provide context-aware answers, resulting in increased workload, delayed decision-making, and reduced productivity.
 
 ---
+## Context & Motivation
+Leveraging machine learning, natural language processing, and Generative AI, this project automates traditionally manual processes like document review, insurance claim triage, or customer support through a PDF-based intelligent assistant.
+- **AI-enhanced understanding** of unstructured content for faster analysis.
+- **Predictive insights** to support proactive decision-making.
+- **Streamlined information flow** across internal teams or external users.
+- Based on real-world use cases like product queries, support FAQs, legal document analysis, etc.
+---
 ## Objective
 This project aims to develop a **Retrieval-Augmented Generation (RAG)** based conversational agent that enables users to interact with a corpus of PDF documents through a natural language interface. The system is designed to:
 - Automate information retrieval from enterprise documents.
@@ -41,11 +48,12 @@ This project aims to develop a **Retrieval-Augmented Generation (RAG)** based co
 - Each chunk is transformed into a vector representation using HuggingFaceEmbeddings (``all-MiniLM-L6-v2``).
 - Vectors are stored in a **FAISS** index for fast and scalable similarity search.
 ### 3.	Query Execution (RAG Pipeline)
-- A user submits a natural language query via the web UI.
-- The retriever identifies the top-k relevant chunks from the vector store.
+- A user submits a natural language query via the chat UI.
+- Retriever selects top relevant chunks from the FAISS index.
 - These chunks are passed to a **Groq-hosted large language model** (``mixtral-8x7b-32768``) to generate an informed response.
 ### 4. Conversational Memory
-- The system maintains session-level chat history using LangChain's ``RunnableWithMessageHistory`` to support follow-up questions with contextual understanding.
+- A session-based ``ChatMessageHistory`` maintains prior user inputs and bot replies.
+- ``RunnableWithMessageHistory`` wraps the chain to handle contextual understanding across turns.
 
 ---
 ## Key Components
